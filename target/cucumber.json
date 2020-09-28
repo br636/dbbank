@@ -1,0 +1,119 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6838302101,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the demo bank application \u0027http://demo.rapidtestpro.com/login.php\u0027 in browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://demo.rapidtestpro.com/login.php\u0027",
+                  "offset": 33
+                }
+              ],
+              "location": "WebCommonSteps.launch_the_demo_bank_application_http_demo_rapidtestpro_com_login_php_in_browser(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-28T07:20:34.887Z",
+        "line": 14,
+        "name": "verify account details with valid credetials",
+        "description": "",
+        "id": "demo-bank;verify-account-details-with-valid-credetials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1048210100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters \"1234556666\", \"MavDemo@01\" and \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234556666\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"MavDemo@01\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"12345\"",
+                  "offset": 43
+                }
+              ],
+              "location": "WebCommonSteps.user_enters_and(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166519299,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click the account details button",
+            "match": {
+              "location": "Details_StepDef.user_click_the_account_details_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdef.Details_StepDef.account_details_page_is_displayed(Details_StepDef.java:35)\r\n\tat ✽.account details page is displayed(file:/C:/Users/babu_/eclipse-workspace/Bank/src/main/java/Feature/bank.Feature:10)\r\n",
+              "duration": 3576499,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "account details page is displayed",
+            "match": {
+              "location": "Details_StepDef.account_details_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User logs out of the application",
+            "match": {
+              "location": "WebCommonSteps.user_logs_out_of_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Background"
+          }
+        ]
+      }
+    ],
+    "name": "Demo Bank",
+    "description": "",
+    "id": "demo-bank",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/babu_/eclipse-workspace/Bank/src/main/java/Feature/bank.Feature",
+    "tags": []
+  }
+]
