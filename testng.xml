@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="Classrunner.java"/>
+      <class name="runner"/>
     </classes>
   </test>
 </suite>
