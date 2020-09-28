@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="runner"/>
+      <class name="runner.Classrunner"/>
     </classes>
   </test>
 </suite>
